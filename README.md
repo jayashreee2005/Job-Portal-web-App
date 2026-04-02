@@ -1,40 +1,149 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 💼 Job Portal (Frontend Project)
 
-## Getting Started
+## 📌 Project Overview
 
-First, run the development server:
+This project is a frontend-based Job Portal application developed using Next.js. It allows users to browse job listings, search for jobs, view job details, and simulate job application functionality.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The application focuses on clean UI design, user experience, and component-based architecture without backend integration.
+
+---
+
+## 🚀 Features
+
+### 🔐 Authentication
+
+* Login page with validation
+* Signup page for new users (simulated)
+
+### 🏠 Dashboard
+
+* View job listings
+* Search jobs by title or company
+* Filter section (UI only)
+
+### 📄 Job Details
+
+* View detailed information about selected job (to be implemented)
+
+### ❤️ Saved Jobs
+
+* Save jobs for later reference (planned)
+
+### 👤 Profile
+
+* View and edit user profile (planned)
+
+---
+
+## 🧱 Project Structure
+
+```
+/pages
+  index.js
+  login.js
+  signup.js
+  dashboard.js
+
+/components
+  Navbar.js
+  Footer.js
+  SearchBar.js
+  JobCard.js
+  Filters.js
+
+/styles
+  globals.css
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 🎨 UI Design System
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+* Primary Color: #714B67 (Purple)
+* Accent Color: #875A7B
+* Background: #f8f9fa
+* Card Background: #ffffff
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Reusable Classes:
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* .card → for job cards
+* .button → for buttons
+* .input → for input fields
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+* Next.js (Pages Router)
+* React (useState, routing)
+* CSS (Global styling)
+* JavaScript (ES6)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ⚙️ Installation & Setup
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+```
+git clone <your-repo-link>
+```
+
+2. Install dependencies:
+
+```
+npm install
+```
+
+3. Run the project:
+
+```
+npm run dev
+```
+
+4. Open in browser:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🔄 Application Flow
+
+```
+Login → Dashboard → Search → View Jobs → Apply/Save → Profile
+```
+
+---
+
+## 🧠 Key Concepts Used
+
+* Component-based architecture
+* State management using useState
+* Dynamic filtering using JavaScript
+* Routing using Next.js Pages Router
+
+---
+
+## 📌 Future Enhancements
+
+* Backend integration (Node.js / Firebase)
+* Real authentication system
+* Database integration
+* Advanced filters
+* Job application tracking
+* Responsive design improvements
+
+---
+
+## 👨‍💻 Author
+
+* MCA Mini Project
+* Developed as part of frontend training
+
+---
+
+## 📄 License
+
+This project is for educational purposes only.

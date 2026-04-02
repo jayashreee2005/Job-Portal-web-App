@@ -1,78 +1,108 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Link from "next/link";
+import Navbar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black`}
-    >
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the index.js file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs/pages/getting-started?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="page-shell">
+      <Navbar />
+
+      <main className="main-content">
+        <section className="landing-hero">
+          <div className="container landing-hero-grid">
+            <div className="landing-copy">
+              <span className="landing-badge">Job Portal</span>
+              <h1>Discover jobs, save favorites, and sign in when you are ready.</h1>
+              <p className="landing-lead">
+                This is the first page visitors see. It introduces the platform,
+                explains what the app does, and gives two clear next steps: explore
+                jobs or sign in to continue.
+              </p>
+
+              <div className="hero-actions">
+                <Link href="/dashboard" className="button link-button">
+                  Explore Jobs
+                </Link>
+                <Link href="/login" className="button button-alt link-button">
+                  Sign In
+                </Link>
+                <Link href="/signup" className="button button-light link-button">
+                  Create Account
+                </Link>
+              </div>
+
+              <div className="hero-points">
+                <span>Job search</span>
+                <span>Saved roles</span>
+                <span>Profile flow</span>
+              </div>
+            </div>
+
+            <div className="landing-visual card">
+              <div className="landing-visual-header">
+                <span className="visual-pill visual-pill-primary">Welcome</span>
+                <span className="visual-pill">Start here</span>
+              </div>
+
+              <div className="floating-card featured-job">
+                <p className="eyebrow">What you can do</p>
+                <h3>Browse live roles</h3>
+                <p>Search by title, company, location, and job type.</p>
+              </div>
+
+              <div className="visual-metrics">
+                <div>
+                  <strong>Explore</strong>
+                  <span>open roles</span>
+                </div>
+                <div>
+                  <strong>Sign in</strong>
+                  <span>to save progress</span>
+                </div>
+                <div>
+                  <strong>Start fast</strong>
+                  <span>in one click</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="container landing-section">
+          <div className="section-heading">
+            <p className="section-kicker">About the site</p>
+            <h2>A simple job portal built for browsing and tracking opportunities.</h2>
+            <p>
+              Users can explore listings, inspect job details, save interesting roles,
+              and sign in to manage their profile and dashboard.
+            </p>
+          </div>
+
+          <div className="feature-grid">
+            <article className="card feature-card">
+              <h3>Explore jobs</h3>
+              <p>
+                View available roles in a clean dashboard with search and filtering.
+              </p>
+            </article>
+            <article className="card feature-card">
+              <h3>Sign in securely</h3>
+              <p>
+                Return users can log in to access the dashboard, saved jobs, and
+                profile pages.
+              </p>
+            </article>
+            <article className="card feature-card">
+              <h3>Save and revisit</h3>
+              <p>
+                Shortlist jobs and come back later when you are ready to apply.
+              </p>
+            </article>
+          </div>
+        </section>
       </main>
+
+      <Footer />
     </div>
   );
 }

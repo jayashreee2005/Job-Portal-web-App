@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "ZQonhGZA8qI",
+      "name": "sarathy s",
+      "email": "spsarathy0858@gmail.com",
+      "password": "Sarathy@21"
+    },
+    {
+      "id": "VaN2RWBSysw",
+      "name": "HR",
+      "email": "Hems@gamil.com",
+      "password": "123456789"
+    },
+    {
+      "id": "mebtkElqKfQ",
+      "name": "nisha",
+      "email": "athilakshmi287@gmail.com",
+      "password": "Nisha121"
+    }
+  ],
+  "jobs": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
