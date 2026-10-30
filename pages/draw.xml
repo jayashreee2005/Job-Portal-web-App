@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Use Case">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Actor -->
+        <mxCell id="actor1" value="User" style="shape=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="50" y="200" width="40" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- System -->
+        <mxCell id="system" value="Job Portal System" style="rounded=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="150" y="50" width="500" height="400" as="geometry"/>
+        </mxCell>
+
+        <!-- Use Cases -->
+        <mxCell id="u1" value="Login / Signup" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="30" y="30" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u2" value="Dashboard" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="300" y="30" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u3" value="Search Jobs" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="30" y="120" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u4" value="View Job Details" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="300" y="120" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u5" value="Save Job" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="30" y="210" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u6" value="Apply Job" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="300" y="210" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u7" value="Submit Application" style="ellipse;" vertex="1" parent="system">
+          <mxGeometry x="160" y="300" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Connections -->
+        <mxCell id="e1" edge="1" source="actor1" target="u1" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e2" edge="1" source="actor1" target="u3" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e3" edge="1" source="actor1" target="u4" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e4" edge="1" source="actor1" target="u5" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e5" edge="1" source="actor1" target="u6" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Include -->
+        <mxCell id="e6" value="<<include>>" style="dashed=1;endArrow=open;" edge="1" source="u6" target="u7" parent="system">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

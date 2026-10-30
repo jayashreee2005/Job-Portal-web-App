@@ -1,0 +1,10 @@
+.env*
+!.env.example
+db.json
+.next/
+node_modules/
+_docx_extract_sample/
+git
+*.zip
+~$*
+target/
